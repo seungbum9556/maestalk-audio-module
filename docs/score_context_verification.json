@@ -1,0 +1,15 @@
+{
+  "raw_estimates_preserved_all_cases": true,
+  "controlled_wrong_note_reviewed": true,
+  "controlled_missing_note_reviewed": true,
+  "controlled_extra_note_reviewed": true,
+  "source_frozen_unchanged": true,
+  "new_pitch_accuracy_improvement_claimed": false,
+  "gpu_used": false,
+  "source_tests": {
+    "module": 29,
+    "existing_project": 174,
+    "all_passed": true
+  },
+  "cli_wrong_note_review_count": 1
+}

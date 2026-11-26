@@ -1,0 +1,79 @@
+{
+  "module_version": "0.4.1",
+  "audio_schema": "1.3",
+  "evaluation": {
+    "conditions": 64,
+    "audit_conditions": 58,
+    "fresh_confirmation_conditions": 6,
+    "correct_added": 14,
+    "correct_lost": 0,
+    "wrong_deviation_worsened": 0,
+    "changed_frames": 18,
+    "missing_unchanged": true,
+    "false_voiced_unchanged": true,
+    "adopt": true
+  },
+  "source_module_tests_passed": 61,
+  "existing_project_tests_passed": 174,
+  "total_tests_passed": 235,
+  "original_files_preserved": 70,
+  "existing_pitch_candidates_unchanged": true,
+  "original_voicing_preserved": true,
+  "runtime_maria_pitch_matches_saved_audit": true,
+  "runtime_rms_relative_level_chroma_unchanged": true,
+  "onset_changes_adopted": false,
+  "gap_recovery_adopted": false,
+  "gpu_used": false,
+  "source_sha256": {
+    "maestalk_audio/__init__.py": "11cb5077e7593b84756ee012a4892bbe0908693a9216144d7e6d0626621137aa",
+    "maestalk_audio/__main__.py": "040b171bbbc5786892648a2be910dc97a3e21783279c7269c1bfdb49672db2d9",
+    "maestalk_audio/analysis.py": "a584dbde797fade91fd33a2d5d99912a60b14cf22f79715abf2cbbc03ef0a70d",
+    "maestalk_audio/boundaries.py": "be1e9c6488cd7b3b8bc507c119f22ee420e48c8f8ad7ef53ae3d83825490844c",
+    "maestalk_audio/corrections.py": "9408add2e85cab43d215241102b43a046e657ce494b88f1406755771403cc28f",
+    "maestalk_audio/fetch_models.py": "c0400092854ecc0b60629324fae26a55b50a720f728352021c07064ee5a9d439",
+    "maestalk_audio/onsets.py": "1523514155b3bf9bf89fbdf2edd4476ff4b973ec10ef87822709d07e047f3fb3",
+    "maestalk_audio/pitch.py": "d25a0173b6eb7be8960ce55bbaec10f7a07ae33f223640c4e6efbf881229547e",
+    "maestalk_audio/recheck.py": "3516f3095f4e222bdb5e793c45ec1bd39d81add2c0dd0b0792fca78e73a3dca6",
+    "maestalk_audio/result.py": "659725f5dd732c40d2fb927290c2874a57d15d2be40c6cf26a4d3d192cc6f260",
+    "maestalk_audio/score.py": "e30e2017fcabc28dc329e68b53a32bbd62fa849a8e4d879be1430521b6799331",
+    "maestalk_audio/timing.py": "df28e0d7ee0a0cbd867a1d0f6928ea2462860a9889f491b820ce9dae34ed4d30"
+  },
+  "evaluation_driver_sha256": "892751f953a8f2f94c9f9b27209ac6838e08adeaaa912c263dc130c1a68f29c3",
+  "models": {
+    "swift": {
+      "filename": "swift_f0.onnx",
+      "sha256": "6385e8c2ebc3872e82c9ff5946228de44cd3be77a750ea53698b7dbfe94b0a22",
+      "version": "0.3.0",
+      "source": "https://github.com/lars76/swift-f0",
+      "license": "MIT",
+      "author": "Lars Nieradzik",
+      "original_filename": "model.onnx",
+      "license_url": "https://opensource.org/license/mit"
+    },
+    "fcpe_ddsp": {
+      "filename": "fcpe_ddsp.pt",
+      "sha256": "8544427eebbf2baef6213cc9a05057e46961617a8e5bd96975a0d42da6a09059",
+      "source": "https://huggingface.co/ChiTu/FCPE",
+      "license": "CC-BY-NC-SA-4.0",
+      "revision": "aeec888cd3eecd9a350945205a86340ef9293548",
+      "download_url": "https://huggingface.co/ChiTu/FCPE/resolve/aeec888cd3eecd9a350945205a86340ef9293548/DDSP_200k.pt",
+      "author": "ChiTu / CN_ChiTu",
+      "original_filename": "DDSP_200k.pt",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "harmof0_verifier": {
+      "filename": "harmof0_mdb.pt",
+      "sha256": "1d47ce083858782cf3de78b1a0f61d98e5836b5a81745a3e47f2ad8ddafec99e",
+      "role": "verification_only",
+      "source": "https://github.com/WX-Wei/HarmoF0",
+      "revision": "3b2223649953f7786b602c8b7d608bce1562da38",
+      "download_url": "https://raw.githubusercontent.com/WX-Wei/HarmoF0/3b2223649953f7786b602c8b7d608bce1562da38/harmof0/checkpoints/mdb-stem-synth.pth",
+      "license": "MIT (repository declaration)",
+      "author": "Weixing Wei et al.",
+      "original_filename": "mdb-stem-synth.pth",
+      "license_url": "https://github.com/WX-Wei/HarmoF0/blob/3b2223649953f7786b602c8b7d608bce1562da38/LICENSE"
+    }
+  },
+  "scope": "58 development/regression conditions and6 final excerpt conditions; existing composers/performers and pretraining overlap can remain",
+  "environment": "Windows Python3.10 with existing CPU dependencies; clean online install and Linux not independently tested"
+}

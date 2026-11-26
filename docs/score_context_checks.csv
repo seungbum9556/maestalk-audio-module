@@ -1,0 +1,12 @@
+﻿case,raw_audio_unchanged,alignment_status,expected_notes,consistent_notes,pitch_mismatch_reviews,not_observed_reviews,ambiguous_or_repeat_reviews,extra_stable_runs,short_unstable_runs,exact_run_match_fraction,reference_scope,raw_pitch_accuracy_vs_actually_played,naive_score_overwrite_accuracy_vs_actually_played,intentional_wrong_note_preserved_for_review,intentional_omission_flagged,intentional_extra_flagged
+correct,True,accepted_for_review,5,5,0,0,0,0,1,1.0,"Controlled synthesized performance, independently known played pitches",0.976,0.976,,,
+wrong_note,True,accepted_for_review,5,4,1,0,0,0,2,0.8,"Controlled synthesized performance, independently known played pitches",0.968,0.776,True,,
+missing_note,True,accepted_for_review,5,4,0,1,0,0,1,0.8,"Controlled synthesized performance, independently known played pitches",0.97,0.97,,True,
+extra_note,True,accepted_for_review,5,5,0,0,0,1,1,0.8333333333333334,"Controlled synthesized performance, independently known played pitches",0.98,0.98,,,True
+octave_mistake,True,accepted_for_review,5,4,1,0,0,0,2,0.8,"Controlled synthesized performance, independently known played pitches",0.968,0.776,,,
+changing_tempo,True,accepted_for_review,5,5,0,0,0,0,0,1.0,"Controlled synthesized performance, independently known played pitches",0.993421052631579,0.993421052631579,,,
+same_pitch_repeat,True,accepted_for_review,4,2,0,0,2,0,0,0.75,"Controlled synthesized performance, independently known played pitches",0.97,0.99,,,
+fast_low_cello,True,accepted_for_review,8,8,0,0,0,0,0,1.0,"Controlled synthesized performance, independently known played pitches",0.96,0.96,,,
+real_schubert_cello_quiet,True,accepted_for_review,53,44,0,0,9,5,5,0.8793103448275862,"Reused TRIOS aligned MIDI: ticks retained as beats, only pitch order used; review statuses are not verified performance mistakes",,,,,
+real_musicnet2217_cello,True,accepted_for_review,175,150,5,16,4,9,73,0.8369565217391305,Reused MusicNet annotation pitch order as a score proxy; raw F0 and previous accuracy unchanged,,,,,
+real_musicnet2298_cello,True,accepted_for_review,176,146,3,20,7,9,82,0.8162162162162162,Reused MusicNet annotation pitch order as a score proxy; raw F0 and previous accuracy unchanged,,,,,

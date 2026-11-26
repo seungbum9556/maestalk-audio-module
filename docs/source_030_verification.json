@@ -1,0 +1,100 @@
+{
+  "task_date": "2026-11-26",
+  "module_version": "0.3.0",
+  "audio_schema_version": "1.1",
+  "source_module_tests_passed": 44,
+  "existing_project_tests_passed": 174,
+  "total_source_tests_passed": 218,
+  "test_commands": [
+    "python -m unittest discover -s module_tests -v",
+    "python -m unittest discover -s tests -v"
+  ],
+  "controlled_synthetic_conditions": 17,
+  "real_recording_conditions": 11,
+  "real_raw_matches_frozen_selected_pair": true,
+  "default_recheck_correct_added_frames": 11,
+  "default_recheck_correct_lost_frames": 0,
+  "default_recheck_increased_false_voiced_frames": 0,
+  "recheck_automatically_applied": false,
+  "maria_or_musicnet_pitch_improvement_achieved": false,
+  "onset_quality_complete": false,
+  "level_gain_check": {
+    "source": "Existing Maria recording with known digital gain changes; not a new performance",
+    "gain_regions": [
+      [
+        0.0,
+        7.5,
+        1.0
+      ],
+      [
+        7.5,
+        12.5,
+        0.5
+      ],
+      [
+        12.5,
+        17.5,
+        2.0
+      ],
+      [
+        17.5,
+        22.5,
+        0.25
+      ],
+      [
+        22.5,
+        30.0,
+        1.0
+      ]
+    ],
+    "transition_exclusion_s": 0.1,
+    "clean_mean_abs_error_db": 2.6705770477536056e-07,
+    "clean_max_abs_error_db": 8.288215038732005e-07,
+    "noise_snr_definition": "Whole original clip energy / fixed noise energy = 10dB",
+    "scope": "Recorded RMS gain response; not calibrated SPL or perceived playing strength",
+    "noise_result": "Fixed background noise can mask small instrument-level changes; no noise removal claimed"
+  },
+  "threshold_050_decision": "Rejected: quiet Schubert +3 correct but +4 silent false positives; Maria/MusicNet +0",
+  "cli_repeat": {
+    "score_notes_consistent": 4,
+    "onset_candidates": 4,
+    "pitch_proposal_frames": 3,
+    "proposals_are_correct": true,
+    "proposals_are_applied": false
+  },
+  "source_sha256": {
+    "maestalk_audio/__init__.py": "1a63fad68313e7b609a3dd03a781e47ac981aadeda38a7832891739e9a317406",
+    "maestalk_audio/__main__.py": "b6c8ec2d70bcb791e766d68419b1a37a304ad07a5c68e0590f5ecc921ffe9c53",
+    "maestalk_audio/analysis.py": "70f389176f7927f5a79576a338e303507d9d10dee50b684a82dc5650a9072112",
+    "maestalk_audio/fetch_models.py": "f0cfeb9a5d0f0abb755cfc1b6f9e63ca29f229d7e9f6d096f784f8531f92d116",
+    "maestalk_audio/onsets.py": "1523514155b3bf9bf89fbdf2edd4476ff4b973ec10ef87822709d07e047f3fb3",
+    "maestalk_audio/pitch.py": "6e02cf48ecafb39280968d0e58faf78374fefb1fec6372c78806c105888c1664",
+    "maestalk_audio/recheck.py": "3516f3095f4e222bdb5e793c45ec1bd39d81add2c0dd0b0792fca78e73a3dca6",
+    "maestalk_audio/result.py": "6404e6193b1218e99a64654f054ee1dc8f2af42699c6b1214c2ac49896c3f58c",
+    "maestalk_audio/score.py": "e30e2017fcabc28dc329e68b53a32bbd62fa849a8e4d879be1430521b6799331",
+    "maestalk_audio/timing.py": "df28e0d7ee0a0cbd867a1d0f6928ea2462860a9889f491b820ce9dae34ed4d30"
+  },
+  "original_files_preserved": true,
+  "preserved_original_file_count": 70,
+  "preserved_older_archives": {
+    "maestalk-audio-module-0.1.0.zip": "e6298c736c15bf4cbb2c265f90b9753e5b3ff3cf6e3329279d124d7aac80b80c",
+    "maestalk-audio-module-0.2.0.zip": "5e5941688d7918bf11c5dead541b6297209f58e599be9095cca6a89b934df417"
+  },
+  "gpu_used": false,
+  "packages": {
+    "maestalk-audio": "0.1.0",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "librosa": "0.11.0",
+    "torch": "2.5.1+cpu",
+    "torchaudio": "2.5.1+cpu",
+    "onnxruntime": "1.23.2",
+    "soundfile": "0.14.0",
+    "mido": "1.3.3",
+    "matplotlib": "3.10.9"
+  },
+  "environment_scope": "Windows Python 3.10; existing CPU dependencies reused; fresh online install and Linux not independently tested",
+  "independent_holdout_validation": false,
+  "relocated_archive_check": "Recorded separately in delivery_verification.json after building the archive",
+  "source_phase_notes": "Initial sources frozen in source_snapshot; expanded selector frozen separately in expanded_recheck; threshold_050 rejected"
+}

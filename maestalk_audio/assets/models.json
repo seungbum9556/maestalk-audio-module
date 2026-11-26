@@ -1,0 +1,56 @@
+{
+  "models": {
+    "swift": {
+      "filename": "swift_f0.onnx",
+      "sha256": "6385e8c2ebc3872e82c9ff5946228de44cd3be77a750ea53698b7dbfe94b0a22",
+      "version": "0.3.0",
+      "source": "https://github.com/lars76/swift-f0",
+      "license": "MIT",
+      "author": "Lars Nieradzik",
+      "original_filename": "model.onnx",
+      "license_url": "https://opensource.org/license/mit"
+    },
+    "fcpe_ddsp": {
+      "filename": "fcpe_ddsp.pt",
+      "sha256": "8544427eebbf2baef6213cc9a05057e46961617a8e5bd96975a0d42da6a09059",
+      "source": "https://huggingface.co/ChiTu/FCPE",
+      "license": "CC-BY-NC-SA-4.0",
+      "revision": "aeec888cd3eecd9a350945205a86340ef9293548",
+      "download_url": "https://huggingface.co/ChiTu/FCPE/resolve/aeec888cd3eecd9a350945205a86340ef9293548/DDSP_200k.pt",
+      "author": "ChiTu / CN_ChiTu",
+      "original_filename": "DDSP_200k.pt",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "harmof0_verifier": {
+      "filename": "harmof0_mdb.pt",
+      "sha256": "1d47ce083858782cf3de78b1a0f61d98e5836b5a81745a3e47f2ad8ddafec99e",
+      "role": "verification_only",
+      "source": "https://github.com/WX-Wei/HarmoF0",
+      "revision": "3b2223649953f7786b602c8b7d608bce1562da38",
+      "download_url": "https://raw.githubusercontent.com/WX-Wei/HarmoF0/3b2223649953f7786b602c8b7d608bce1562da38/harmof0/checkpoints/mdb-stem-synth.pth",
+      "license": "MIT (repository declaration)",
+      "author": "Weixing Wei et al.",
+      "original_filename": "mdb-stem-synth.pth",
+      "license_url": "https://github.com/WX-Wei/HarmoF0/blob/3b2223649953f7786b602c8b7d608bce1562da38/LICENSE"
+    }
+  },
+  "fcpe_source_commit": "6a149c1afb1c7e7821b71869dfb31ad50c95b516",
+  "original_vendor_file_sha256": {
+    "fcpe/models_infer.py": "a7e553cabe39a374c049abbd1374cec2d6cafb22b2136e65affd58c4bc164d2d",
+    "fcpe/models.py": "7c94a99d10878f8527338f08002a714095d2a17d2a7ef54eedcfc6c5bda55cd5",
+    "fcpe/tools.py": "925d76ff442136156f8e64c3d7364dcdcb55ae17d5450c07079b0b4b8dff49bf",
+    "fcpe/torch_interp.py": "1f7e6252b27c81478621dc47969136218a26180533452e909a56bf7e7e667fe2",
+    "fcpe/model_conformer_naive.py": "1eb3368ecd9b8d318630b447acf334342f30513d5ed775f03215bf707b624a69",
+    "fcpe/mel_extractor.py": "8e5a39d591c76b75bcd299879dc6034f1bb8cf227ce292f03200a642e7416065",
+    "fcpe/mel_fn_librosa.py": "2ad3519aca529eb553f99a16608b3200a273bc6523bc83e23533175f911a9e92",
+    "swift_f0/core.py": "0d88818a012c71647aa0b56572b2a3e6d23c7138b2251999faf6d3e1ef930762",
+    "harmof0/network.py": "f4492ee37d47c51eb06f3556a7729b93da342018af4fcb5d1b48989b56d4ec37",
+    "harmof0/layers.py": "cce61ca3ac97217cbd667805d85416f82d3d5435834d09099133ab68db85d073"
+  },
+  "vendor_changes": [
+    "SwiftF0 core: optional explicit ONNX model_path argument; inference computation unchanged",
+    "FCPE models_infer: unused eager f02midi import replaced by NotImplementedError stub; original F0 inference unchanged",
+    "Minimal package __init__ files; MIDI/export/training source and unused checkpoints omitted",
+    "HarmoF0: network/layers only, np.int to int compatibility; CPU loader uses centered64ms frames and16-frame batch overlap; weights unchanged"
+  ]
+}

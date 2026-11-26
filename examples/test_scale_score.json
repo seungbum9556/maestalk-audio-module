@@ -1,0 +1,9 @@
+{
+  "notes": [
+    {"note_id": "C4", "midi": 60, "start_beat": 0, "duration_beats": 0.7},
+    {"note_id": "D4", "midi": 62, "start_beat": 1, "duration_beats": 0.7},
+    {"note_id": "E4", "midi": 64, "start_beat": 2, "duration_beats": 0.7},
+    {"note_id": "F4", "midi": 65, "start_beat": 3, "duration_beats": 0.7},
+    {"note_id": "G4", "midi": 67, "start_beat": 4, "duration_beats": 0.7}
+  ]
+}

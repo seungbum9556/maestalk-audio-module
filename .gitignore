@@ -1,0 +1,22 @@
+# Generated environments, analysis results and private recordings.
+.venv/
+.venv*/
+.cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+outputs/
+recordings/
+data/
+.pytest_cache/
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
+
+# Restore this public checkpoint with python -m maestalk_audio.fetch_models.
+maestalk_audio/assets/fcpe_ddsp.pt
+maestalk_audio/assets/*.partial

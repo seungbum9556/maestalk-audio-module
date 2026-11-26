@@ -1,0 +1,7 @@
+# Keep source and model bytes identical to the verified 0.4.1 delivery.
+# This disables line-ending conversion, while text diffs still work.
+* -text
+*.wav binary
+*.mid binary
+*.onnx binary
+*.pt binary
