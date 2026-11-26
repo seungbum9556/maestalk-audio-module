@@ -10,6 +10,8 @@ dist/
 outputs/
 recordings/
 data/
+archive/
+models/
 .pytest_cache/
 .vscode/
 .idea/
@@ -20,3 +22,23 @@ data/
 # Restore this public checkpoint with python -m maestalk_audio.fetch_models.
 maestalk_audio/assets/fcpe_ddsp.pt
 maestalk_audio/assets/*.partial
+
+# Historical research stays local; the shared module lives in maestalk_audio/.
+/experiments/
+/tests/
+/analyze_audio.py
+/benchmark_streaming.py
+/crepe_pitch.py
+/make_test_audio.py
+/offline_audio.py
+/pitch_events.py
+/pitch_recovery.py
+/prepare_crepe.py
+/prepare_urmp.py
+/realtime_audio.py
+/run_baseline.py
+/streaming_audio.py
+/requirements.txt
+/requirements-realtime.txt
+/requirements-model.txt
+/requirements-model-gpu.txt

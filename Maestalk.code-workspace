@@ -1,0 +1,30 @@
+{
+  "folders": [
+    { "name": "Maestalk 오디오 분석", "path": "." }
+  ],
+  "settings": {
+    "files.exclude": {
+      ".cache": true,
+      "**/__pycache__": true,
+      "build": true,
+      "*.egg-info": true
+    },
+    "search.exclude": {
+      ".cache": true,
+      "archive": true,
+      "build": true,
+      "dist": true,
+      "outputs": true,
+      "data": true,
+      "**/__pycache__": true,
+      "**/*.egg-info": true
+    },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+      "WORK_PLAN.md": "analyze_audio.py,benchmark_streaming.py,crepe_pitch.py,offline_audio.py,pitch_events.py,pitch_recovery.py,prepare_crepe.py,prepare_urmp.py,realtime_audio.py,run_baseline.py,streaming_audio.py",
+      "requirements-module-cpu.txt": "requirements.txt,requirements-realtime.txt,requirements-model.txt,requirements-model-gpu.txt",
+      "*.zip": "${capture}.zip.sha256,${capture}.zip.verification.json"
+    }
+  }
+}
